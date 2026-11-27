@@ -1,0 +1,22 @@
+name: Validate remote files
+
+# Runs on every push and pull request, so a broken ads.json, content.json or
+# manifest.json is caught before the app can download it.
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check ads.json
+        run: python3 tools/validate_ads.py ads.json
+      - name: Check manifest.json and content.json
+        run: |
+          python3 -m json.tool manifest.json > /dev/null
+          if [ -f tools/validate_content.py ]; then python3 tools/validate_content.py content.json --manifest manifest.json; else python3 -m json.tool content.json > /dev/null; fi
