@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "adsEnabled": true,
+  "minAppVersion": "1.0.0",
+  "units": {
+    "banner": "ca-app-pub-5151856074386100/6843567253",
+    "interstitial": "ca-app-pub-5151856074386100/4137512861",
+    "rewarded": "ca-app-pub-5151856074386100/9198267859",
+    "appOpen": "ca-app-pub-5151856074386100/9278158902"
+  },
+  "banner": {
+    "enabled": true,
+    "screens": [
+      "missionsList",
+      "trackers",
+      "search"
+    ]
+  },
+  "interstitial": {
+    "enabled": true,
+    "everyNCompletions": 3,
+    "minSecondsBetween": 180,
+    "skipFirstSession": true,
+    "minSecondsAfterLaunch": 120,
+    "maxPerSession": 4
+  },
+  "rewarded": {
+    "enabled": true,
+    "removeAdsHours": 24,
+    "unlockMapLayers": false
+  },
+  "appOpen": {
+    "enabled": false,
+    "minHoursInBackground": 4
+  },
+  "debugUseRemoteIds": false
+}
