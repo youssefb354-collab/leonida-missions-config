@@ -26,7 +26,8 @@
   },
   "rewarded": {
     "enabled": true,
-    "removeAdsHours": 24,
+    "removeAdsHours": 0,
+    "themeHours": 24,
     "unlockMapLayers": false
   },
   "appOpen": {
