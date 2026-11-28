@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "adsEnabled": true,
+  "adsEnabled": false,
   "minAppVersion": "1.0.0",
   "units": {
     "banner": "ca-app-pub-5151856074386100/6843567253",
@@ -31,8 +31,8 @@
     "unlockMapLayers": false
   },
   "appOpen": {
-    "enabled": false,
-    "minHoursInBackground": 4
+    "enabled": true,
+    "minMinutesInBackground": 5
   },
   "debugUseRemoteIds": false
 }
