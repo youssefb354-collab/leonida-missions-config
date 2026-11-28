@@ -19,7 +19,8 @@ RANGES = {
     ("interstitial", "minSecondsBetween"): (60, 86400),
     ("interstitial", "minSecondsAfterLaunch"): (30, 3600),
     ("interstitial", "maxPerSession"): (0, 10),
-    ("rewarded", "removeAdsHours"): (1, 72),
+    ("rewarded", "removeAdsHours"): (0, 72),
+    ("rewarded", "themeHours"): (0, 72),
     ("appOpen", "minHoursInBackground"): (1, 168),
 }
 BOOLEANS = [("debugUseRemoteIds",), ("banner", "enabled"), ("interstitial", "enabled"),
